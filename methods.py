@@ -54,6 +54,15 @@ def has_ruby_exp():
         }
     }
 
+    for teacher in experience.items():
+        if teacher[1]["ruby"] == True:
+            ruby_experience.append(teacher[0])
+        
+
+    return sorted(ruby_experience)
+
+has_ruby_exp()
+
 
     
 
